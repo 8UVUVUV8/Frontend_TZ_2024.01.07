@@ -1,0 +1,23 @@
+<div class="mainconntainer">
+    <h1>foglalasok</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Dátum</th>
+                <th>Név</th>
+                <th>Fő</th>
+                <th>Helyszín</th>
+                <th>Irányitószám</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let foglalas of foglalasok">
+                <td>{{ foglalas.datum }}</td>
+                <td>{{ foglalas.nev }}</td>
+                <td>{{ foglalas.fo }}</td>
+                <td>{{ foglalas.cim }}</td>
+                <td>{{ foglalas.iranyitoszam }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

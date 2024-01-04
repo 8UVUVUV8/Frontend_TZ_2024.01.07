@@ -1,0 +1,22 @@
+.maincontainer{
+    border-style: solid;
+    border-width: medium;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.kep{
+    width: 50%;
+    border-radius: 5%;
+    margin-top: 15px;
+}
+
+hr{
+    color: black;
+    opacity: 100%;
+}
+
+.mainmaincontainer{
+    margin: 20px;
+}

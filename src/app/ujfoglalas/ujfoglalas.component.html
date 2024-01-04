@@ -1,0 +1,26 @@
+<div class="mainconntainer">
+    <h1>Új foglalás hozzáadása</h1>
+    <form>
+        <div class="form-group">
+            <label for="cim">Cím</label>
+            <input type="text" name="newcim" class="form-control" id="cim" placeholder="Cím" [(ngModel)]="cim">
+        </div>
+        <div class="form-group">
+            <label for="datum">Dátum</label>
+            <input type="date" name="newdatum" class="form-control" id="datum" placeholder="Dátum" [(ngModel)]="datum">
+        </div>
+        <div class="form-group">
+            <label for="fo">Fö</label>
+            <input type="number" min="2" max="16" name="newfo" class="form-control" id="fo" placeholder="Fö" [(ngModel)]="fo">
+        </div>
+        <div class="form-group">
+            <label for="iranyitoszam">Irányitoszám</label>
+            <input type="text" name="newiranyitoszam" class="form-control" id="iranyitoszam" placeholder="Irányitoszám" [(ngModel)]="iranyitoszam">
+        </div>
+        <div class="form-group">
+            <label for="nev">Név</label>
+            <input type="text" name="newnev" class="form-control" id="nev" placeholder="Név" [(ngModel)]="nev">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="$event.preventDefault(); addFoglalas()" >hozzáadása</button>
+    </form>
+</div>
